@@ -3,100 +3,433 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dailyDeals.css" />
-    <title>Daily Deals</title>
+    <link rel="stylesheet" href="boAt_Personalisation.css" />
+    <title>boAt Personalisation</title>
   </head>
   <body>
-    <section id="header">
-      <a href="#">
+     <!-- nav start -->
+     <nav>
+      <div>
+        <i class="fa-solid fa-bars"></i>
         <img
-          src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
-          alt=""
+          src="/Home_Page/boat main/boat main/boat logo.jpg"
+          alt="logo"
+          onclick="showMain()"
         />
-      </a>
-      <div class="divnavbar">
-        <ul id="navbar">
-          <li><a href=""> Categories</a></li>
-          <li><a href="">boAt Personnalisation</a></li>
-          <li><a href="">Gift with boAt</a></li>
-          <li><a href=""> Corporate Orders</a></li>
+        <div>
+          <span>
+            <a href="#" onclick="showDiv()" class="dropbtn">Categories</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div id="myDropdown" class="dropdown-content">
+              <!-- 1 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/TruewirelessEarbuds.html"
+              >
+                <div onclick="goToWL()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/TruewirelessEarbuds.html"
+                    ><img
+                      src="/Categories/Categories_photo/tru Wireless airbuds.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/TruewirelessEarbuds.html"
+                    ><p>Airdopes True Wireless</p></a
+                  >
+                </div>
+              </a>
 
-          <li>
-            More
-            <select name="" id="more">
-              <!-- <option value=""></option> -->
-
-              <li>
-                <a href=""> <option value="">Daily Deals</option></a>
-              </li>
-              <li>
-                <a href=""> <option value="">Blogs</option></a>
-              </li>
-              <li>
-                <a href=""> <option value="">Refer & Earn</option></a>
-              </li>
-              <li>
-                <a href=""> <option value="">Careers</option></a>
-              </li>
-              <li>
-                <a href=""> <option value="">Social Responsiblity</option></a>
-              </li>
-              <li>
-                <a href=""> <option value="">Store Locater</option></a>
-              </li>
-              <li>
-                <a href=""><option value="">boAt Community</option></a>
-              </li>
-            </select>
-          </li>
-
-          <li>
-            <div id="searchDiv">
-              <img
-                src="Icon/magnifying-glass-solid.svg"
-                id="searchicon"
-                alt=""
-              />
-              <a href=""
-                ><input
-                  type="search"
-                  placeholder="Search 'Headphones' "
-                  id="search"
-                />
+              <!-- 2 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/PersonalisedProducts.html"
+              >
+                <div onclick="goToWH()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/PersonalisedProducts.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/personlise products.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/PersonalisedProducts.html"
+                    ><p>Personalised Product</p></a
+                  >
+                </div>
+              </a>
+              <!-- 3 -->
+              <a href="">
+                <div onclick="goToW()">
+                  <a href=""
+                    ><img
+                      src="/Categories/Categories_photo/nackbands.png"
+                      alt=""
+                  /></a>
+                  <a href=""><p>Wireless nackbands</p></a>
+                </div>
+                <!-- 4 -->
+                <div onclick="goToBW()">
+                  <a href="">
+                    <img
+                      src="/Categories/Categories_photo/smartwatches_100x.webp"
+                      alt=""
+                  /></a>
+                  <a href=""> <p>smartWatch</p></a>
+                </div>
+              </a>
+              <!-- 5 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WirelesssHeadphones.html"
+              >
+                <div onclick="goToSS()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WirelesssHeadphones.html"
+                    ><img
+                      src="/Categories/Categories_photo/wireless spikar.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WirelesssHeadphones.html"
+                    ><p>Wireless Speakers</p></a
+                  >
+                </div>
+              </a>
+              <!-- 6 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Wireless speaker.html"
+              >
+                <div onclick="goToAH()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Wireless speaker.html"
+                    ><img
+                      src="/Categories/Categories_photo/wired headphone.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Wireless speaker.html"
+                    ><p>Wired-Headphone</p></a
+                  >
+                </div>
+              </a>
+              <!-- 7 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WiredHeadphones.html"
+              >
+                <div onclick="goToMA()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WiredHeadphones.html"
+                    ><img
+                      src="/Categories/Categories_photo/cables_cd468fe0-9b41-4eef-b686-0785c6478534_100x.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WiredHeadphones.html"
+                    ><p>wired earphones</p></a
+                  >
+                </div>
+              </a>
+              <!-- 8 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Soundbars.html"
+              >
+                <div onclick="goToW()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Soundbars.html"
+                    ><img
+                      src="/Categories/Categories_photo/soundbar.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Soundbars.html"
+                    ><p>Soundbar</p></a
+                  >
+                </div>
+              </a>
+              <!-- 9 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Limited Edition.html"
+                id="anker"
+              >
+                <div onclick="goToLE()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Limited Edition.html"
+                    ><img
+                      src="/Categories/Categories_photo/limited eddition.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Limited Edition.html"
+                  >
+                    <p>Limited Edition</p></a
+                  >
+                </div>
+              </a>
+              <!-- 10 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/MisfitTrimmer.html"
+              >
+                <div onclick="goToT()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/MisfitTrimmer.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/MISFIT-shop_100x.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/MisfitTrimmer.html"
+                    ><p>Misfit Trimmers</p></a
+                  >
+                </div>
+              </a>
+              <!-- 11 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Chargers.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Chargers.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/Charger_100x.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Chargers.html"
+                    ><p>Charger</p></a
+                  >
+                </div>
+              </a>
+              <!-- 12 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/PartySpeakers.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/PartySpeakers.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/party speaker.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/PartySpeakers.html"
+                    ><p>party Speaker</p></a
+                  >
+                </div>
+              </a>
+              <!-- 13 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Powerbanks.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Powerbanks.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/powerbank_100x.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Powerbanks.html"
+                    ><p>Powerbanks</p></a
+                  >
+                </div>
+              </a>
+              <!-- 14 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Cables.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Cables.html"
+                    ><img
+                      src="/Categories/Categories_photo/cables_cd468fe0-9b41-4eef-b686-0785c6478534_100x.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Cables.html"
+                    ><p>Cables</p></a
+                  >
+                </div>
+              </a>
+              <!-- 15 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/CarAccessories.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/CarAccessories.html"
+                    ><img
+                      src="/Categories/Categories_photo/Car-accessories_07e4e533-2b59-4597-aa3f-110552541f0f_100x.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/CarAccessories.html"
+                    ><p>Car Accessories</p></a
+                  >
+                </div>
+              </a>
+              <!-- 16 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Superhero.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Superhero.html"
+                    ><img
+                      src="/Categories/Categories_photo/super hero.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Superhero.html"
+                    ><p>Super Hero Collection</p></a
+                  >
+                </div>
+              </a>
+              <!-- 17 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Trebel for Women.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Trebel for Women.html"
+                    ><img src="/Categories/Categories_photo/women.png" alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/Trebel for Women.html"
+                    ><p>Trebel For Women</p></a
+                  >
+                </div>
+              </a>
+              <!-- 18 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/GamingHeadphones.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/GamingHeadphones.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/gamming headphone.png"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/GamingHeadphones.html"
+                    ><p>Gamming headphone</p></a
+                  >
+                </div>
+              </a>
+              <!-- 19 -->
+              <a
+                href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WiredHeadphones.html"
+              >
+                <div onclick="goToIG()">
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WiredHeadphones.html"
+                  >
+                    <img
+                      src="/Categories/Categories_photo/wireless headphones.webp"
+                      alt=""
+                  /></a>
+                  <a
+                    href="/Categories/Boat Indresh (2)/Category_content/Boat_clone-main/boat-main/boat/WiredHeadphones.html"
+                    ><p>Wireless headphones</p></a
+                  >
+                </div>
               </a>
             </div>
-          </li>
-          <li>
-            <a href="">
-              <img src="Icon/user-regular.svg" alt="" id="usericon" />
-            </a>
-          </li>
-          <li>
-            <a href=""
-              ><img
-                src="Icon/bag-shopping-solid (1).svg"
-                alt=""
-                id="shopping"
-            /></a>
-          </li>
-        </ul>
+          </span>
+          <a href="/boAt Personalisation/boAt_Personalisation.html"
+            >boAt Personalisation</a
+          >
+          <a href="/Gift With boAt/gift.html">Gift With boAt</a>
+          <a href="/Corporate Order/corporate.html">Corporate Orders</a>
+          <span>
+            <a href="#">More</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-content2">
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/dailyDeals.html"
+                >Daily Deals</a
+              >
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/Blog.html"
+                >Blogs</a
+              >
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/ReferAndEarn.html"
+                >Refer and Earn</a
+              >
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/Carrers.html"
+                >Carrers</a
+              >
+
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/Social_Resposbility.html"
+                >Social Responsibility</a
+              >
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/FindStrore.html"
+                >Store Locator</a
+              >
+              <a
+                href="/More/Boat_clone-main/Boat_clone-main/boat-main/boat/BoatCommunity.html"
+                >boAt Community</a
+              >
+            </div>
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass" id="errspan"></i>
+          <input type="text" placeholder="Search" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989"
+            alt="profile"
+            onclick="showLogin()"
+          />
+          <div class="show2">
+            <p>Hi boAthead!</p>
+            <a href="Login.html">Login</a>
+          </div>
+          <img
+            class="toggle-btn"
+            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Cart_7e68f099-c0bf-4966-a9ef-14d1a3af07ad.png?v=1673260730"
+            alt="cart"
+            id="open-panel"
+          />
+        </div>
       </div>
-      <hr />
+    </nav>
+    <!-- nav end -->
+   <!-- section 1 -->
+    <section class="section01">
+     <div class="text1111">
+      <h2>Special Range — Personalised Products </h2>
+      <br>
+    <button><a href="">Filterd by   \/</a></button>
+   
+     </div>
+    
     </section>
-    <!-- nav section end  -->
+    
+    
     <section class="item">
       <!-- box start -->
        <!-- --1-- -->
+      
+        
       <div class="container">
         
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/nirvan ion.webp" alt=""></a>
             <div class="picdowntext">
               <span>120 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png " alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -104,20 +437,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Nirvana lon</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1999
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -144,12 +477,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image copy.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/airbuds 131.webp" alt=""></a>
             <div class="picdowntext">
               <span>120 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -157,20 +490,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Airdopes 131</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1999
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -198,12 +531,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 2.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/airbuds 115.png" alt=""></a>
             <div class="picdowntext">
               <span>120 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -211,20 +544,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
-            <a href=""><h4 id="item">Airdopes 131</h4>
+            <a href=""><h4 id="item">Airdopes 115</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />799
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -251,12 +584,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 3.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/airdopes 141.jpg" alt=""></a>
             <div class="picdowntext">
               <span>150 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -264,20 +597,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >4.0 |677<img src="Icon/xyz-removebg-preview.png" alt=""
+                >4.0 |677<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Airdopes 141</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />2999
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -304,12 +637,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/Stormcall_1.webp" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/Storm_call.webp" alt=""></a>
             <div class="picdowntext">
               <span>120 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -317,20 +650,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >4.8 |707<img src="Icon/xyz-removebg-preview.png" alt=""
+                >4.8 |707<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Storm Call</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1999
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -358,12 +691,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 5.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/airdopes 458.webp" alt=""></a>
             <div class="picdowntext">
               <span>120 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -371,20 +704,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Airdopes 458</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />2999
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -412,12 +745,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/Lunar_connect_1.webp" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/lunnar connect.webp" alt=""></a>
             <div class="picdowntext">
               <span>BT Calling</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -425,20 +758,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Lunar Connect</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1299
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -465,12 +798,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/Wave_Arcade.webp" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/wave edge.jpg" alt=""></a>
             <div class="picdowntext">
               <span>1.8" HD Display</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -478,20 +811,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Wave Arcade</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1699
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -518,12 +851,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 6.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/airbuds 115.png" alt=""></a>
             <div class="picdowntext">
               <span>Clear Calling</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -531,20 +864,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Airdopes 115</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1499
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -571,12 +904,12 @@
 
 <div class="box">
   <div class="picleft1">
-    <a href=""><img src="item_pic/Waveflex_connect.webp" alt=""></a>
+    <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/wave connect.jpg" alt=""></a>
     <div class="picdowntext">
       <span>Clear Calling</span>
     </div>
     <div class="picuptext">
-      <img src="Icon/hand1-removebg-preview.png" alt="" />
+      <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
       <span>Engraving Available</span>
     </div>
   </div>
@@ -584,20 +917,20 @@
     <div class="star">
       <i class="fas fa-star" id="sstar"></i>
       <span
-        >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+        >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
       /></span>
     </div>
     <a href=""><h4 id="item">Wave Flex Connect </h4>
     </a>
     <h4>
       <img
-        src="Icon/rupya-removebg-preview.png"
+        src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
         alt=""
         id="rupya"
       />1699
       <span
         ><img
-          src="Icon/rupya-removebg-preview.png"
+          src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
           alt=""
           id="rupya2"
         />
@@ -625,12 +958,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/Wave_Beat_Call.webp" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/wave edge.jpg" alt=""></a>
             <div class="picdowntext">
               <span>BT Calling</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -638,20 +971,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >3.0 |90<img src="Icon/xyz-removebg-preview.png" alt=""
+                >3.0 |90<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Wave Edge</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1799
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -678,12 +1011,12 @@
 
         <div class="box">
           <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 17.png" alt=""></a>
+            <a href=""><img src="/boAt Personalisation/boAt Personalisation_photo/product image/stone 180.jpeg" alt=""></a>
             <div class="picdowntext">
               <span>8 Hours Playback</span>
             </div>
             <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
+              <img src="/boAt Personalisation/boAt Personalisation_photo/hand1-removebg-preview.png" alt="" />
               <span>Engraving Available</span>
             </div>
           </div>
@@ -691,20 +1024,20 @@
             <div class="star">
               <i class="fas fa-star" id="sstar"></i>
               <span
-                >5.0 |77<img src="Icon/xyz-removebg-preview.png" alt=""
+                >5.0 |77<img src="/boAt Personalisation/boAt Personalisation_photo/xyz-removebg-preview.png" alt=""
               /></span>
             </div>
             <a href=""><h4 id="item">Stone 180</h4>
             </a>
             <h4>
               <img
-                src="Icon/rupya-removebg-preview.png"
+                src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                 alt=""
                 id="rupya"
               />1099
               <span
                 ><img
-                  src="Icon/rupya-removebg-preview.png"
+                  src="/boAt Personalisation/boAt Personalisation_photo/rupya-removebg-preview.png"
                   alt=""
                   id="rupya2"
                 />
@@ -727,334 +1060,6 @@
           </div>
         </div>
 
-        <!-- --13-- -->
-
-        <div class="box">
-          <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 7.png" alt=""></a>
-            <div class="picdowntext">
-              <span>BT Calling</span>
-            </div>
-            <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
-              <span>Engraving Available</span>
-            </div>
-          </div>
-          <div class="detailrRight">
-            <div class="star">
-              <i class="fas fa-star" id="sstar"></i>
-              <span
-                >3.0 |55<img src="Icon/xyz-removebg-preview.png" alt=""
-              /></span>
-            </div>
-            <a href=""><h4 id="item">Wave Call</h4>
-            </a>
-            <h4>
-              <img
-                src="Icon/rupya-removebg-preview.png"
-                alt=""
-                id="rupya"
-              />1299
-              <span
-                ><img
-                  src="Icon/rupya-removebg-preview.png"
-                  alt=""
-                  id="rupya2"
-                />
-                <s id="replaceMoney"> 7999</s>
-              </span>
-              <span id="off"> 84% off</span>
-            </h4>
-            <a href="">
-              <div class="dout"></div>
-            <div class="dout2"><span>+10</span></div>
-            </a>
-            <hr />
-            <br />
-            <span class="text1">HD curved Display</span>
-            <span class="text2">IWP Technology</span>
-            <span class="text3"></span>
-            <a href=""><div class="addcard">
-              <span>Add to Card</span>
-            </div></a>
-          </div>
-        </div>
-
-
-        <!-- --14-- -->
-
-        <div class="box">
-          <div class="picleft1">
-            <a href=""><img src="item_pic/image copy 18.png" alt=""></a>
-            <!-- <div class="picdowntext">
-              <span></span>
-            </div> -->
-            <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
-              <span>Engraving Available</span>
-            </div>
-          </div>
-          <div class="detailrRight">
-            <div class="star">
-              <i class="fas fa-star" id="sstar"></i>
-              <span
-                >Be first to review<img src="Icon/xyz-removebg-preview.png" alt=""
-              /></span>
-            </div>
-            <a href=""><h4 id="item">WCD QCPD</h4>
-            </a>
-            <h4>
-              <img
-                src="Icon/rupya-removebg-preview.png"
-                alt=""
-                id="rupya"
-              />2750
-              <span
-                ><img
-                  src="Icon/rupya-removebg-preview.png"
-                  alt=""
-                  id="rupya2"
-                />
-                <s id="replaceMoney">4499</s>
-              </span>
-              <span id="off"> 39% off</span>
-            </h4>
-            <a href="">
-              <div class="dout"></div>
-            <div class="dout2"><span>+10</span></div>
-            </a>
-            <hr />
-            <br />
-            <!-- <span class="text1">13mms drivers</span>
-            <span class="text2">IWP Technology</span>
-            <span class="text3"></span> -->
-            <a href=""><div class="addcard">
-              <span>Add to Card</span>
-            </div></a>
-          </div>
-        </div>
-
-        <!-- --15-- -->
-
-        <div class="box">
-          <div class="picleft1">
-            <a href=""><img src="item_pic/191G_1.webp" alt=""></a>
-            <div class="picdowntext">
-              <span>Gaming Earbuds</span>
-            </div>
-            <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
-              <span>Engraving Available</span>
-            </div>
-          </div>
-          <div class="detailrRight">
-            <div class="star">
-              <i class="fas fa-star" id="sstar"></i>
-              <span
-                ><img src="Icon/xyz-removebg-preview.png" alt=""
-              /></span>
-            </div>
-            <a href=""><h4 id="item">Airdopes 191G</h4>
-            </a>
-            <h4>
-              <img
-                src="Icon/rupya-removebg-preview.png"
-                alt=""
-                id="rupya"
-              />1399
-              <span
-                ><img
-                  src="Icon/rupya-removebg-preview.png"
-                  alt=""
-                  id="rupya2"
-                />
-                <s id="replaceMoney"> 3499</s>
-              </span>
-              <span id="off"> 60% off</span>
-            </h4>
-            <a href="">
-              <div class="dout"></div>
-            <div class="dout2"><span>+6</span></div>
-            </a>
-            <hr />
-            <br />
-            <span class="text1">Up to 30hours playback</span><br>
-            <span class="text2">Clear Calling</span>
-            <span class="text3">BEAST™ Mode</span>
-            <a href=""><div class="addcard">
-              <span>Add to Card</span>
-            </div></a>
-          </div>
-        </div>
-
-
-        <!-- --16-- -->
-
-        <div class="box">
-          <div class="picleft1">
-            <a href=""><img src="item_pic/Lunar_call_Pro.webp" alt=""></a>
-            <div class="picdowntext">
-              <span>BT Calling</span>
-            </div>
-            <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
-              <span>Engraving Available</span>
-            </div>
-          </div>
-          <div class="detailrRight">
-            <div class="star">
-              <i class="fas fa-star" id="sstar"></i>
-              <span
-                >6.8 |67<img src="Icon/xyz-removebg-preview.png" alt=""
-              /></span>
-            </div>
-            <a href=""><h4 id="item">Lunar Call Pro</h4>
-            </a>
-            <h4>
-              <img
-                src="Icon/rupya-removebg-preview.png"
-                alt=""
-                id="rupya"
-              />2299  
-              <span
-                ><img
-                  src="Icon/rupya-removebg-preview.png"
-                  alt=""
-                  id="rupya2"
-                />
-                <s id="replaceMoney"> 6999</s>
-              </span>
-              <span id="off"> 67% off</span>
-            </h4>
-            <a href="">
-              <div class="dout"></div>
-            <div class="dout2"><span>+9</span></div>
-            </a>
-            <hr />
-            <br />
-            <span class="text1">13mms drivers</span>
-            <span class="text2">IWP Technology</span>
-            <span class="text3">260Ah Battery</span>
-            <a href=""><div class="addcard">
-              <span>Add to Card</span>
-            </div></a>
-          </div>
-        </div>
-
-
-        <!-- --17-- -->
-
-        <div class="box">
-          <div class="picleft1">
-            <a href=""><img src="item_pic/Immortal_131.webp" alt=""></a>
-            <div class="picdowntext">
-              <span>Gaiming Earbuds</span>
-            </div>
-            <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
-              <span>Engraving Available</span>
-            </div>
-          </div>
-          <div class="detailrRight">
-            <div class="star">
-              <i class="fas fa-star" id="sstar"></i>
-              <span
-                >4.6 |72<img src="Icon/xyz-removebg-preview.png" alt=""
-              /></span>
-            </div>
-            <a href=""><h4 id="item">Immortal 131</h4>
-            </a>
-            <h4>
-              <img
-                src="Icon/rupya-removebg-preview.png"
-                alt=""
-                id="rupya"
-              />1199
-              <span
-                ><img
-                  src="Icon/rupya-removebg-preview.png"
-                  alt=""
-                  id="rupya2"
-                />
-                <s id="replaceMoney"> 3499</s>
-              </span>
-              <span id="off"> 66% off</span>
-            </h4>
-            <a href="">
-              <div class="dout"></div>
-            <div class="dout2"><span>+6</span></div>
-            </a>
-            <hr />
-            <br />
-            <span class="text1">Up to 40 Hours PlayBack</span><br>
-            <span class="text2">ENx™ Technology</span>
-            <span class="text3">BEAST™ Mode</span> 
-            <a href=""><div class="addcard">
-              <span>Add to Card</span>
-            </div></a>
-          </div>
-        </div>
-
-
-        <!-- --18-- -->
-
-        <div class="box">
-          <div class="picleft1">
-            <a href=""><img src="item_pic/Immortal-128.gif" alt=""></a>
-            <div class="picdowntext">
-              <span>Gaiming Earbuds</span>
-            </div>
-            <div class="picuptext">
-              <img src="Icon/hand1-removebg-preview.png" alt="" />
-              <span>Engraving Available</span>
-            </div>
-          </div>
-          <div class="detailrRight">
-            <div class="star">
-              <i class="fas fa-star" id="sstar"></i>
-              <span
-                >4.6 |72<img src="Icon/xyz-removebg-preview.png" alt=""
-              /></span>
-            </div>
-            <a href=""><h4 id="item">Immortal 128</h4>
-            </a>
-            <h4>
-              <img
-                src="Icon/rupya-removebg-preview.png"
-                alt=""
-                id="rupya"
-              />1499
-              <span
-                ><img
-                  src="Icon/rupya-removebg-preview.png"
-                  alt=""
-                  id="rupya2"
-                />
-                <s id="replaceMoney"> 3490</s>
-              </span>
-              <span id="off">57% off</span>
-            </h4>
-            <a href="">
-              <div class="dout"></div>
-            <div class="dout2"><span>+6</span></div>
-            </a>
-            <hr />
-            <br />
-            <span class="text1">Up to 40 Hours PlayBack</span><br>
-            <span class="text2">ENx™ Technology</span>
-            <span class="text3">BEAST™ Mode</span> 
-            <a href=""><div class="addcard">
-              <span>Add to Card</span>
-            </div></a>
-          </div>
-        </div>
-
-
-
-
-
-
-       
         
       </div>
     </section>
@@ -1078,7 +1083,7 @@
           </div>
           <div class="rightclick">
             <img
-              src="Icon/right-removebg-preview.png"
+              src="/boAt Personalisation/boAt Personalisation_photo/right-removebg-preview.png"
               alt=""
               id="rightarrow"
             />
@@ -1413,9 +1418,20 @@
           </div>
       </div>
     </footer>
+    <script src="https://kit.fontawesome.com/4d1e521af4.js" crossorigin="anonymous"></script>
+    <script
+    src="https://kit.fontawesome.com/26504e4a1f.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://kit.fontawesome.com/26504e4a1f.js"
+  crossorigin="anonymous"
+></script>
+
     <script
       src="https://kit.fontawesome.com/26504e4a1f.js"
       crossorigin="anonymous"
     ></script>
+   
   </body>
 </html>
